@@ -12,3 +12,5 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+# Add patch
+wget -P /openwrt/package/qca/nss/qca-nss-ecm-64/patches https://raw.githubusercontent.com/1715173329/nss-packages/main/qca/qca-nss-ecm/patches/205-resolve-high-load.patch
