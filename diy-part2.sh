@@ -107,6 +107,10 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser pack
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns package/luci-app-smartdns
 svn co https://github.com/kenzok8/openwrt-packages/branches/main/luci-app-smartdns package/luci-app-smartdns
 
+#添加speedtest和istore插件
+svn co https://github.com/sirpdboy/netspeedtest package/netspeedtest
+svn co https://github.com/linkease/istore-ui package/istore-ui
+svn co https://github.com/linkease/istore package/istore
 #修改bypass的makefile
 #git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
 #find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
