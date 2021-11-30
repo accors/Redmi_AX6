@@ -154,7 +154,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && !cancelled()
       uses: ophub/flippy-openwrt-actions@main
       env:
-        OPENWRT_ARMVIRT_PATH: openwrt/bin/targets/*/*/*.tar.gz
+        OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d_s912_vplus
         WHOAMI: accors
         KERNEL_REPO_URL: https://github.com/breakings/OpenWrt/trunk/opt/kernel
